@@ -49,7 +49,8 @@ class CustomerRepository:
         try:
             cur = conn.cursor()
             cur.execute(sql1, args=[fname, lname, email, phone])
-            cur.execute(sql2, args=[email, password])
+            if password:
+                cur.execute(sql2, args=[email, password])
         except:
             conn.rollback()
             conn.close()
