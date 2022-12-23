@@ -1,7 +1,0 @@
-requests
-Flask
-oauthlib
-pyOpenSSL
-Flask-Login
-flask_cors
-PyMySQL
