@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9400b8-f744-434f-a9d2-33f3c40e6b2f" name="Changes" comment="add basic controllers &amp; db service for sprint 1">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user.py" afterDir="false" />
+    <list default="true" id="1a9400b8-f744-434f-a9d2-33f3c40e6b2f" name="Changes" comment="configure oauth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbservice.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbservice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +129,17 @@
       <workItem from="1668222283763" duration="2039000" />
       <workItem from="1668225624554" duration="4335000" />
       <workItem from="1668230177087" duration="2766000" />
+      <workItem from="1671746366850" duration="4019000" />
+      <workItem from="1671754981706" duration="2441000" />
     </task>
+    <task id="LOCAL-00001" summary="configure oauth">
+      <created>1671666166602</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671666166602</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,8 +156,12 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="configure oauth" />
+    <option name="LAST_COMMIT_MESSAGE" value="configure oauth" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/E6156_customer_service$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1671664987639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E6156_customer_service$E6156_customer_service.coverage" NAME="E6156-customer-service Coverage Results" MODIFIED="1671665733217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E6156_customer_service$E6156_customer_service.coverage" NAME="E6156-customer-service Coverage Results" MODIFIED="1671757512297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
