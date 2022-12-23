@@ -1,10 +1,7 @@
-import json
 
-from flask import Flask, request, Response, jsonify, session, redirect, url_for
+from flask import Flask, request, jsonify, session
 from dbservice import CustomerRepository
 import os
-from oauthlib.oauth2 import WebApplicationClient
-import requests
 from flask_cors import CORS
 
 app = Flask(__name__)
