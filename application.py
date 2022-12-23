@@ -4,14 +4,14 @@ from dbservice import CustomerRepository
 import os
 from flask_cors import CORS
 
-app = Flask(__name__)
-CORS(app)
+application = Flask(__name__)
+CORS(application)
 
-app.secret_key = os.environ.get("SESSION_KEY")
+application.secret_key = os.environ.get("SESSION_KEY")
 
 
 
-@app.route('/customer/get/<string:email>', methods=['GET'])
+@application.route('/customer/get/<string:email>', methods=['GET'])
 def get_customer_info(email):
     res = CustomerRepository.get_customer_by_email(email)
     if res:
@@ -21,7 +21,7 @@ def get_customer_info(email):
 
     return rsp
 
-@app.route('/customer/login', methods=['POST'])
+@application.route('/customer/login', methods=['POST'])
 def customer_login():
     content = request.json
     email, password = content['email'], content['password']
@@ -35,7 +35,7 @@ def customer_login():
         return {"message": "invalid email/password"}
 
 
-@app.route('/customer/glogin', methods=['POST'])
+@application.route('/customer/glogin', methods=['POST'])
 def google_login():
     # Find out what URL to hit for Google login
     content = request.json
@@ -50,18 +50,18 @@ def google_login():
 
     return user
 
-@app.route('/customer/validate_login/<string:email>')
+@application.route('/customer/validate_login/<string:email>')
 def validate_login(email):
     return jsonify({"has_login": email in session})
 
-@app.route('/customer/logout/<string:email>')
+@application.route('/customer/logout/<string:email>')
 def customer_logout(email):
     if email in session:
         session.pop(email)
         return {"message":"logout success!"}
     return {"message":"user has not login!"}
 
-@app.route('/customer/register', methods=['POST'])
+@application.route('/customer/register', methods=['POST'])
 def customer_register():
     f = request.form
     email, fname, lname, phone, password = f['email'], f['fname'], f['lname'], f['phone'], f['password']
@@ -72,7 +72,7 @@ def customer_register():
     return {"message": "register success!"}
 
 
-@app.route('/customer/update/', methods=['PATCH'])
+@application.route('/customer/update/', methods=['PATCH'])
 def update_profile():
     if 'user' not in session:
         return {"message": "user has not login!"}
@@ -86,4 +86,4 @@ def update_profile():
 
 
 if __name__ == "__main__":
-    app.run(ssl_context="adhoc")
+    application.run(ssl_context="adhoc")
