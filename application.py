@@ -61,29 +61,5 @@ def customer_logout(email):
         return {"message":"logout success!"}
     return {"message":"user has not login!"}
 
-@application.route('/customer/register', methods=['POST'])
-def customer_register():
-    f = request.form
-    email, fname, lname, phone, password = f['email'], f['fname'], f['lname'], f['phone'], f['password']
-    res = CustomerRepository.register_user(email, fname, lname, phone, password)
-
-    if not res: return {"message": "register failed! email may be registered."}
-
-    return {"message": "register success!"}
-
-
-@application.route('/customer/update/', methods=['PATCH'])
-def update_profile():
-    if 'user' not in session:
-        return {"message": "user has not login!"}
-    f, new = request.form, {}
-    new['first_name'], new['last_name'], new['phone_number'] = f['fname'], f['lname'], f['phone']
-    row_affected = CustomerRepository.update_user_profile(session['user']['email'], new)
-
-    if row_affected == 0: return {'message': 'update failed!'}
-    session['user'] = CustomerRepository.get_customer_by_email(session['user']['email'])
-    return {'message': 'update success!'}
-
-
 if __name__ == "__main__":
     application.run(ssl_context="adhoc")
