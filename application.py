@@ -1,5 +1,5 @@
 
-from flask import Flask, request, jsonify, session
+from flask import Flask, request, jsonify
 from dbservice import CustomerRepository
 import os
 from flask_cors import CORS
@@ -9,7 +9,7 @@ CORS(application)
 
 application.secret_key = os.environ.get("SESSION_KEY")
 
-
+session = {}
 
 @application.route('/customer/get/<string:email>', methods=['GET'])
 def get_customer_info(email):

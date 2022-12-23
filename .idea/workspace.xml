@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9400b8-f744-434f-a9d2-33f3c40e6b2f" name="Changes" comment="configure for elastic beanstalk">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +130,7 @@
       <workItem from="1668225624554" duration="4335000" />
       <workItem from="1668230177087" duration="2766000" />
       <workItem from="1671746366850" duration="4019000" />
-      <workItem from="1671754981706" duration="3416000" />
+      <workItem from="1671754981706" duration="6438000" />
     </task>
     <task id="LOCAL-00001" summary="configure oauth">
       <created>1671666166602</created>
@@ -166,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671760249159</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="configure for elastic beanstalk">
+      <created>1671760431817</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671760431817</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +198,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/E6156_customer_service$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1671664987639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E6156_customer_service$E6156_customer_service.coverage" NAME="E6156-customer-service Coverage Results" MODIFIED="1671760406761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/E6156_customer_service$E6156_customer_service.coverage" NAME="E6156-customer-service Coverage Results" MODIFIED="1671764231015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
